@@ -31,19 +31,19 @@ class Login extends CI_Controller {
             }
         }else{
             $this->session->set_flashdata('msg', 'username atau email tidak terdaftar');
-            redirect('login');
+           
         }
     }
 
     function cek_session(){
-        if($this->session->userdata('role') === 1){
+        if($this->session->userdata('role') === '1'){
             echo 'admin';
             //$this->load->view('');
-        }else if($this->session->userdata('role') === 2){
+        }else if($this->session->userdata('role') === '2'){
             echo 'member';
             //$this->load->view('');
         }else{
-            $this->load->view('login/index');
+            redirect('login');
         }
     }
 
