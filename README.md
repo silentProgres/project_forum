@@ -1,2 +1,2 @@
 # project_forum
-ini adalah iseng iseng ajee
+Hasil Libur Semester 6
