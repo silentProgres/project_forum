@@ -1,0 +1,19 @@
+/* Desktop */
+.card {
+  width: 30em !important;
+  margin-top: 10%;
+  background-color: chartreuse;
+  box-shadow: cyan 3px 3px;
+}
+
+/* Android */
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .card {
+    width: 23em !important;
+    margin-top: 30%;
+  }
+}
